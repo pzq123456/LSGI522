@@ -1,1 +1,1 @@
-# LSGI522
+# LSGI522 Spatial Data Acquisition
