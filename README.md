@@ -28,9 +28,9 @@
 ## Assessment 
 > - Students do not require to pass both Continuous Assessment and Examination. 
 
-30% - Practical session 
-30% - Mid-term Test 
-40% - Final Exam  
+- 30% - Practical session 
+- 30% - Mid-term Test 
+- 40% - Final Exam  
 
 ## Reference books
 
