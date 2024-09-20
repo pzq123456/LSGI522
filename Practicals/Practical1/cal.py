@@ -38,7 +38,7 @@ def mean_angle_HCR(angle_1, angle_2):
     # # 取平均
     # mean_angle = (angle_1 + angle_2) / 2
 
-    Error = abs(angle_1 - angle_2) - 180
+    Error = (angle_1 - angle_2) + 180
     Correction = - Error / 2
     mean_angle = angle_1 + Correction
 

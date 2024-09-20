@@ -26,26 +26,16 @@ def radian_to_dms(radian):
     degree = math.degrees(radian)
     return decimal_to_dms(degree)
 
-
-144-54-53
-35-3-32
-19-13-29
-
 round1 = [
-    "144-54-53",
-    "35-3-32",
-    "19-13-29"
+    "144-50-9",
+    "35-0-16",
+    "19-9-52"
 ] # A B C
 
-
-144-42-1
-34-56-23
-19-7-14
-
 round2 =[
-    "144-42-1",
-    "34-56-23",
-    "19-7-14"
+    "144-45-6",
+    "34-57-47",
+    "19-7-35"
 ] # A B C
 
 def getACHelper(AaddC,a,c,x,y):
@@ -74,7 +64,7 @@ def getAC(AaddC,a,c,x,y):
 
 # 解三角形辅助函数
 def getAPHelper(A, X, c):
-    alpha1 = np.pi - A - X
+    alpha1 = np.pi - abs(A) - abs(X)
     # 求解AP
     # AP / alpha1 = c / sin(X)
     AP = c * math.sin(alpha1) / math.sin(X)
@@ -125,8 +115,8 @@ def resection(roundAngles):
     print('alpha:', radian_to_dms(alpha))
 
     # 2. Subtract the sum of angles x, y, and α in figure ABCP from 360° to obtain the sum of angles A + C 
-    X = string_to_decimal(roundAngles[0]) - string_to_decimal(roundAngles[1]) # angle A B
-    Y = string_to_decimal(roundAngles[1]) - string_to_decimal(roundAngles[2]) # angle B C
+    X = roundAngles[0] - roundAngles[1] # angle A B
+    Y = roundAngles[1] - roundAngles[2] # angle B C
 
     AaddC = 2 * np.pi - (alpha + X + Y) 
 
@@ -159,9 +149,12 @@ def resection(roundAngles):
     
 
 if __name__ == '__main__':
-    print('### Round 1 ###')
-    r1P1,r1P2 =  resection(round1)
-    print('### Round 2 ###')
-    r2P1,r2P2 =  resection(round2)
-    print('### Between Round Error ###')
-    print('errorE', abs(r1P1[0] - r2P1[0]), 'errorN', abs(r1P1[1] - r2P1[1]))
+    # 对 round1 及 round2 的角度取平均
+    roundAngles = []
+
+    for i in range(3):
+        angle = (string_to_decimal(round1[i]) + string_to_decimal(round2[i])) / 2
+        roundAngles.append(angle)
+        print('meanangle:', radian_to_dms(angle))
+    
+    r1P1,r1P2 =  resection(roundAngles)
