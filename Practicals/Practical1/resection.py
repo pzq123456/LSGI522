@@ -27,23 +27,25 @@ def radian_to_dms(radian):
     return decimal_to_dms(degree)
 
 
-# 324-50-9
-# 215-0-16
-# 199-9-53
+144-54-53
+35-3-32
+19-13-29
+
 round1 = [
-    "324-50-9",
-    "215-0-16",
-    "199-9-53"
+    "144-54-53",
+    "35-3-32",
+    "19-13-29"
 ] # A B C
 
 
-# 324-45-6
-# 214-57-46
-# 199-7-35
+144-42-1
+34-56-23
+19-7-14
+
 round2 =[
-    "324-45-6",
-    "214-57-46",
-    "199-7-35"
+    "144-42-1",
+    "34-56-23",
+    "19-7-14"
 ] # A B C
 
 def getACHelper(AaddC,a,c,x,y):
@@ -77,10 +79,12 @@ def getAPHelper(A, X, c):
     # AP / alpha1 = c / sin(X)
     AP = c * math.sin(alpha1) / math.sin(X)
     BP = c * math.sin(A) / math.sin(X)
-    return AP, BP
+    return abs(AP), abs(BP)
 
 def getAzimuth(A,B):
-    return math.atan2((B[1] - A[1]), (B[0] - A[0]))
+    # return math.atan2((B[1] - A[1]), (B[0] - A[0]))
+    # 控制输出在
+    return math.atan2((B[1] - A[1]), (B[0] - A[0])) % (2 * np.pi)
 
 def getDeltaEandDeltaN(AP, A, B, angle_A):
     azimuth = getAzimuth(A,B)
@@ -143,28 +147,21 @@ def resection(roundAngles):
 
     deltaE, deltaN = getAP(A, B, angle_A, X, c)
     # 也可以带入 C, Y, a 求解
-    deltaE2, deltaN2 = getAP(C, B, angle_C, Y, a)
-    print('deltaE:', deltaE, 'deltaN:', deltaN)
-    print('AP:', deltaE + A[0], deltaN + A[1])
-    print('deltaE2:', deltaE2, 'deltaN2:', deltaN2)
-    print('AP2:', deltaE2 +C[0], deltaN2 + C[1])
-    print('A+C+X+Y+alpha:', alpha + X + Y + angle_A + angle_C - 2*np.pi)
+    deltaE2, deltaN2 = getAP(C, B, -angle_C, Y, a)
+
+    P1 = [deltaE + A[0], deltaN + A[1]]
+    P2 = [deltaE2 + C[0], deltaN2 + C[1]]
+
+    print('P1:', P1, 'deltaE:', deltaE, 'deltaN:', deltaN)
+    print('P2:', P2, 'deltaE:', deltaE2, 'deltaN:', deltaN2)
+    print('errorE', abs(P1[0] - P2[0]), 'errorN', abs(P1[1] - P2[1]))
+    return P1, P2
+    
 
 if __name__ == '__main__':
-    resection(round1)
-
-# 144-50-9 
-# 35-0-16
-# 19-9-53
-
-# 32.665
-# 17.185
-# 21.691
-
-# 144-45-6
-# 34-57-47
-# 19-7-35
-
-# 32.665
-# 17.185
-# 21.692
+    print('### Round 1 ###')
+    r1P1,r1P2 =  resection(round1)
+    print('### Round 2 ###')
+    r2P1,r2P2 =  resection(round2)
+    print('### Between Round Error ###')
+    print('errorE', abs(r1P1[0] - r2P1[0]), 'errorN', abs(r1P1[1] - r2P1[1]))

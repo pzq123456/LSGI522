@@ -64,23 +64,23 @@ def mean_angle_VCR(angle_1, angle_2):
 
     return mean_angle
 
-angles = [
-    ['144-52-31', '89-48-48'],
-    ['324-47-47', '270-10-32'], 
-    ['35-01-55', '89-20-36'],
-    ['214-58-39', '270-39-14'],
-    ['19-11-41', '89-50-11'],
-    ['199-08-05', '270-08-48']
-]
-
 # angles = [
-#     ['144-43-34', '89-50-01'],
-#     ['324-46-39', '270-10-22'], 
-#     ['34-57-05', '89-20-41'],
-#     ['214-58-29', '270-39-04'],
-#     ['19-07-25', '89-50-07'],
-#     ['199-07-46', '270-08-41']
+#     ['144-52-31', '89-48-48'],
+#     ['324-47-47', '270-10-32'], 
+#     ['35-01-55', '89-20-36'],
+#     ['214-58-39', '270-39-14'],
+#     ['19-11-41', '89-50-11'],
+#     ['199-08-05', '270-08-48']
 # ]
+
+angles = [
+    ['144-43-34', '89-50-01'],
+    ['324-46-39', '270-10-22'], 
+    ['34-57-05', '89-20-41'],
+    ['214-58-29', '270-39-04'],
+    ['19-07-25', '89-50-07'],
+    ['199-07-46', '270-08-41']
+]
 
 def mean(dis1, dis2):
     return (dis1 + dis2) / 2
@@ -134,17 +134,17 @@ if __name__ == '__main__':
     # for i in range(0, 3):
     #     print(mean(distances[i][0], distances[i][1]))
 
-    # print('Mean HCR Slope')
-    # for i in range(0, 6, 2):
-    #     print(decimal_to_dms(mean_angle_HCR(angles[i][0], angles[i+1][0])))
+    print('Mean HCR Slope')
+    for i in range(0, 6, 2):
+        print(decimal_to_dms(mean_angle_HCR(angles[i][0], angles[i+1][0])))
         
-    # print('Mean VCR Slope')
-    # for i in range(0, 6, 2):
-    #     print(decimal_to_dms(mean_angle_VCR(angles[i][1], angles[i+1][1])))
+    print('Mean VCR Slope')
+    for i in range(0, 6, 2):
+        print(decimal_to_dms(mean_angle_VCR(angles[i][1], angles[i+1][1])))
 
-    # print('Mean Slope')
-    # for i in range(0, 3):
-    #     print(mean_slope(string_to_decimal(VCRSlope[i][0]), VCRSlope[i][1]))
+    print('Mean Slope')
+    for i in range(0, 3):
+        print(mean_slope(string_to_decimal(VCRSlope[i][0]), VCRSlope[i][1]))
 
 # 324-50-9
 # 215-0-16
@@ -153,12 +153,12 @@ if __name__ == '__main__':
 # 144-54-53
 # 35-3-32
 # 19-13-29
-    # 计算差值 角度
-    print(minus('144-54-53', '324-50-9'))
-    print(minus('35-3-32', '215-0-16'))
-    print(minus('19-13-29', '199-9-53'))
+    # # 计算差值 角度
+    # print(minus('144-54-53', '324-50-9'))
+    # print(minus('35-3-32', '215-0-16'))
+    # print(minus('19-13-29', '199-9-53'))
 
-    # 转化为度分秒
-    print(decimal_to_dms(minus('144-54-53', '324-50-9')))
-    print(decimal_to_dms(minus('35-3-32', '215-0-16')))
-    print(decimal_to_dms(minus('19-13-29', '199-9-53')))
+    # # 转化为度分秒
+    # print(decimal_to_dms(minus('144-54-53', '324-50-9')))
+    # print(decimal_to_dms(minus('35-3-32', '215-0-16')))
+    # print(decimal_to_dms(minus('19-13-29', '199-9-53')))
