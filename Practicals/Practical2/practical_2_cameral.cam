@@ -1,0 +1,47 @@
+LPS Camera File Version: 2.0
+Camera Name: "SMO RC10A"
+Camera Description: ""
+
+Focal Length [mm]: 152.12
+Principal Point:
+	x0 [mm]: 0.007
+	y0 [mm]: 0.003
+
+Fiducial Coordinates:
+	Number of Fiducials: 4
+      ID       X[mm]         Y[mm]
+       1     -106.002      106.005
+       2      105.999      106.002
+       3          106     -106.003
+       4     -106.002     -106.002
+
+Radial Distortion Observations:
+	Type: "Radial Distance"
+	Number of Observations: 18
+      ID   Distance[mm]	Distortion[microns]
+       1            0                0
+       2           10                0
+       3           20               -1
+       4           30               -2
+       5           40               -2
+       6           50               -2
+       7           60               -1
+       8           70                0
+       9           80                1
+      10           90                3
+      11          100                3
+      12          110                3
+      13          120                2
+      14          130                0
+      15          140               -1
+      16          150               -1
+      17          160                0
+      18          170                0
+
+Radial Lens Distortion Coefficients:
+	k0: -9.97892e-06
+	k1: 2.82421e-09
+	k2: -9.60022e-14
+
+Extended Parameters:
+	Type: "NONE"
