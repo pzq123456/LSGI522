@@ -14,10 +14,10 @@
 | 2 | 9 September  | Conventional Surveying  |
 | 2 | 10 September | Map Projection  |
 | 3 | 16 September | Practicum 1 – Conventional Surveying  Z 6/F Garden |
-| 3 | 17 September | Photogrammetry and Remote Sensing  |
-| 4 | 23 September | Practicum 2 – Photogrammetry  ZN603a |
-| 4 | 24 September | Laser Scanning  |
-| 5 | 30 September | Practicum 3 – Laser Scanning  Z 6/F Garden  |
+| 3 | 17 September | -  |
+| 4 | 23 September | Photogrammetry and Remote Sensing  |
+| 4 | 24 September | Practicum 2 – Photogrammetry  ZN603a   |
+| 5 | 30 September | Laser Scanning Practicum 3 – Laser Scanning  Z 6/F Garden  |
 | 5 | 1 October    | Public Holiday  |
 | 6 | 7 October    | GNSS positioning  |
 | 6 | 8 October    | Lecture/Tutorial/Revision  |
