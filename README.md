@@ -32,6 +32,9 @@
 - 30% - Mid-term Test 
 - 40% - Final Exam  
 
+## Mid-term Test
+多选
+
 ## Reference books
 
 1. Chen, Y.Q. and Y.C. Lee, 2001. Geographical data acquisition. Springer. Gomarasca, M.A., 2009. 
