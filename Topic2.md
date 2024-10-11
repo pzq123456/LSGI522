@@ -6,6 +6,9 @@
 | Geodetic | 大地测量 | Topographic | 地形测量 | Engineering | 工程测量 |
 | Cadastral | 地籍测量 | - | - | - | - |
 | Gross errors | 粗差 | Systematic errors | 系统误差 | Random errors | 随机误差 |
+| azimuth | 方位角 | bearing | 方位角 | Electromagnetic distance measurement | 电磁距离测量 |
+| Radiation | 辐射法 | Intersection | 交会法 | Resection | 重测法 |
+| Vertical axis | 垂直轴 | Collimation axis | 瞄准轴 | Trunnion axis | 转轴 |
 
 ## Key concepts
 
@@ -53,11 +56,59 @@
   - Topographic: Measurement of the shape of the Earth’s surface
   - Engineering: Dimension and location control of construction projects
   - Cadastral: Definition of land parcel boundaries
+
+7. bearing & azimuth
+  - azimuth : When oriented to True North it becomes an azimuth (α)
+  - bearing : When the direction is oriented it becomes a bearing (β)
+  - ![](./imgs/p10.png)
+
+8. Radiation
+   - ![](./imgs/p13.png)
+   - Unknown point, P, is located with respect to a known point, A, by the polar measurement of
+     - Angle, θ measured clockwise
+     - Distance, r
+   - Requires a reference direction, θ0
+   - Polar is resolved into dX and dY
+
+9.  Intersection
+    - ![](./imgs/p14.png) 
+    - Unknown point, P, is located with respect to two known points, A and B, by either
+      - Measurement of two angles (θBAP,θPBA)
+      - Measurement of two distances (rAP,rBP)
+      - Measurement of one angle and one distance from different points (θBAP,rBP) or (rAP,θPBA)
+
+10. Resection
+    - ![](./imgs/p15.png)
+    - Unknown point, P, is located with respect to three known points, A, B and C by
+      - Measurement of three angles
+      - Measurement of three distances
+
+11. Traversing
+  - Start from a control point and locate new points by successive radiations
+  - End on
+    - Starting point, closed loop traverse
+      - ![](./imgs/p11.png)
+      - Scale error not detectable
+      - Orientation error
+    - Another control point, closed traverse
+    - ![](./imgs/p12.png)
+  - Both need additional points for traverse orientation
+  - Open traverse should be avoided
+
+12. Instrument types
+    - Three basic categories
+      - Angle measurement - theodolites
+        - Vertical (standing) axis, Collimation axis, Trunion (Transit) axis
+      - Distance measurement - tapes, EDM
+      - Height difference measurement - levels
+    - First two used to be separate instruments now combined into the Total Station
+
+13. Control networks
+    - Control networks cover large areas and, up to a point, use geodetic surveying
+      - First order control is at the national level
+      - Second order control is at the regional level
+      - Third order control is at the local level
 ## Questions from exams
-
-
-
-
 
 ### 1. Question 25  
    - (a) Which of the following coordinates is more precise? Why?  (4 marks) 
