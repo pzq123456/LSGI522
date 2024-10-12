@@ -1,4 +1,13 @@
 # Topic 4 - Photogrammetry
+
+## Word List
+## Key concepts
+## Questions from exams
+### 1. Question 7 : 
+- The area for an aerial photogrammetric mapping project is 6.8 kilometers long and 4.6 kilometers wide. The photographic scale is 1:15,000. Calculate the minimum number of photographs (size of each photograph is 25 cm by 25 cm) that will be needed to provide stereoscopic coverage of the area if the photographs are to have 80% end-lap and 40% side-lap. (6 marks)
+
+### 2. Draw  clear  and  accurate  diagrams  that  illustrate  that  the  coplanarity  condition  in photogrammetry can be represented by two instances of the collinearity condition. (5 marks)
+
 ## Photogrammetry
 - The photogrammetry
     - Take two (or more) images that overlap from different locations

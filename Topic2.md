@@ -94,6 +94,7 @@
     - ![](./imgs/p12.png)
   - Both need additional points for traverse orientation
   - Open traverse should be avoided
+  - Instruments used are theodolites and tapes
 
 12. Instrument types
     - Three basic categories

@@ -1,4 +1,11 @@
 # Topic 6 Satellite Positioning
+
+## Questions from exams
+### 1. uestion 6 
+- (a)  Explain the difference between the terms GPS and GNSS. (2 marks) 
+- (b)  In the GPS system, the positioning codes are phase modulated onto the L1 and L2 carrier waves. Explain the principle of phase modulation. (2 marks) 
+
+
 1. What are the three segments of GPS and what are their functions? Show how they interact with each other using a diagram. 
 
 Space segment
