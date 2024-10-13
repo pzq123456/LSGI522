@@ -2,11 +2,28 @@
 
 ## Word List
 ## Key concepts
+1. Photographic strip : A strip is the set of photographs taken along the line of flight
+   - ![](./imgs/p17.png)
+   - End lap, E : This  is  the  amount  by  which  the  photographs overlap along the strip
+   - E = (G-B)/G * 100%
+
+2. Side lap, S : 
+  - Lateral separation of flight lines is the strip spacing, W 
+  - Side lap is the amount of overlap across the block
+  - S = (G-W)/G * 100%
+  - ![](./imgs/p18.png)
+
+3. Operations
+   1. Exterior orientation : Recreate  geometric  relationship  between images and object.
+   2. Interior orientation : Define the internal geometry of the camera and stablish relationship between measuring system and images.
+
+
 ## Questions from exams
 ### 1. Question 7 : 
 - The area for an aerial photogrammetric mapping project is 6.8 kilometers long and 4.6 kilometers wide. The photographic scale is 1:15,000. Calculate the minimum number of photographs (size of each photograph is 25 cm by 25 cm) that will be needed to provide stereoscopic coverage of the area if the photographs are to have 80% end-lap and 40% side-lap. (6 marks)
 
-### 2. Draw  clear  and  accurate  diagrams  that  illustrate  that  the  coplanarity  condition  in photogrammetry can be represented by two instances of the collinearity condition. (5 marks)
+### 2. Draw  clear  and  accurate  diagrams  that  illustrate  that  the  coplanarity  condition in photogrammetry can be represented by two instances of the collinearity condition. (5 marks)
+- ![](./imgs/p19.png)
 
 ## Photogrammetry
 - The photogrammetry
