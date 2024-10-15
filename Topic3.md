@@ -34,7 +34,7 @@
    - Establishing the corresponding relationship between geodetic coordinates (𝜙,𝜆) or say (B, L) and plane coordinates therefore becomes necessary, according to certain mathematical rules, which is called projection.
 
 4. Projections classified by how they are created(Four elements) : 
-- The four elements are:
+   - The four elements are:
     | Aspect | Class | Contact | Property |
     |--------|-------|---------|----------|
     | Normal | Azimuthal | Tangent | Conformality |
@@ -62,23 +62,23 @@
      - Secant
        - The projection surface intersects the surface of the globe
    - Property
-     - Conformality
+     - Conformality a = b
        - Samescalein all directions preserves local shape
-     - Equidistance
+     - Equidistance h = 1 or k = 1
        - Distances are correct from a point or along a line
-     - Equivalence
+     - Equivalence 𝑝𝑝 = 𝑎 * 𝑏 = 1
        - Areas over map are proportionally correct
 
-1.  standard parallels : 
+5.  standard parallels : 
     - When the cylinder or cone is normal (axis  coincides with the Earth’s axis) the lines of  tangency or intersection are called standard parallels.
 
-2. Evaluating distortion(ellipse of distortion) 
+6. Evaluating distortion(ellipse of distortion) 
    - In order to evaluate the distortion of a projection five scales are important
-     - Scale along the meridian, h
-     - Scale along the parallel, k
-     - Maximum scale at a point, a
-     - Minimum scale at a point, b
-     - Scale along any arc, µ
+     - Scale along the meridian, h 沿着子午线
+     - Scale along the parallel, k 沿着纬线圈
+     - Maximum scale at a point, a 最大比例尺
+     - Minimum scale at a point, b 最小比例尺
+     - Scale along any arc, µ 沿着任意弧线
 
 ## Questions from exams
 ### 1. Question 4 
