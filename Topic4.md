@@ -1,5 +1,11 @@
 # Topic 4 - Photogrammetry
 
+**Photogrammetry** is the art, science, and technology of obtaining reliable information about the Earth, its environment, and other physical objects and processes through non-contact imaging and sensor systems. It involves recording, measuring, analyzing, and representing such information. According to the International Society for Photogrammetry and Remote Sensing (ISPRS), photogrammetry integrates photography and remote sensing to derive data through various techniques.
+
+In photogrammetry, photographs serve as perspective projections, where 3D objects are transformed into 2D images via a perspective center. The appearance of these photographs depends on factors such as the location of the camera (the position of the perspective center), its orientation (the direction the camera is pointing), the principal distance of the lens, and the size of the image sensor.
+
+Photogrammetry typically involves capturing two or more overlapping images from different locations. By measuring corresponding points on these images, the relationship between the object and the camera can be re-established. This process allows the creation of a 3D model of the object through "back projection."
+
 ## Word List
 ## Key concepts
 1. Photographic strip : A strip is the set of photographs taken along the line of flight

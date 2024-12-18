@@ -55,3 +55,56 @@
 2. Indirect : 扫描到控制点上
    - Use targets with known object-space coordinates
    - 3D conformal transformation
+
+
+## Dust & Vapor
+- Laser measurements can be weakened by interacting with dust and vapor particles, which scatter the laser beam and the signal returning from the target.
+- Using last-pulse measurements can reduce or eliminate this interference.
+- Systems that are expected to work in such conditions regularly can be optimized for these environments.
+
+## Reflectivity
+- Highly reflective objects may saturate some laser detectors, while the return signal from low-reflectivity objects may occasionally be too weak to register as valid.
+- Minimum detectable object size depends on reflectivity.
+- A strong sunlight reflection off a highly reflective target may "saturate" a receiver, producing an invalid or less accurate reading.
+  * Most acquisition is done in a preferred range of angles to avoid this issue.
+
+## Strip Adjustment
+- Systematic Error (shifts & drifts): Wrong or inaccurate calibration of the entire measurement system (block specific), limited accuracy of exterior orientation (GPS- & IMU-related time- and location-specific).
+- Result: Offset in planimetric view and height (10’s of cm).
+- For removing these discrepancies, strip adjustment algorithms require quantification of these offsets at various locations.
+  - Across-track flight lines and ground control are needed to fully adjust the systematic errors.
+  - Automatic tie elements detection & 3D adjustments.
+  - Improves planimetric accuracy by about 40% and height accuracy by about 25%.
+
+## From point clouds to 3-D surface models
+- Points are used to create 3D surface models for applications.
+- Triangular Irregular Networks (TINs) are used to develop Digital Elevation Models (DEMs).
+- Points must be classified: “bare earth” points hit the “ground”; other point categories include tree canopy and buildings.
+- Correct identification of “bare earth” is critical for mapping applications.
+
+
+## LiDAR compared to Survey
+| + | - |
+| --- | --- |
+| Rapid data collection | Requires survey for control |
+| High point density | Large data volumes |
+| High accuracy | Requires processing expertise |
+| Non-contact | |
+| Immediate data use or analysis for terrain models | |
+
+## Overview of operation
+- Scan scene from different locations
+- Join scans together
+  - Targeted points
+  - Object features
+  - Cloud constraints
+- Geo-referencing
+  - Surveyed control points
+- Modelling
+
+## Geo-referencing
+- Direct
+  - Integrate traversing with scanning
+- Indirect
+  - Use targets with known object-space coordinates
+  - 3D conformal transformation
